@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    background: #E9E9E9;
+}
+ol,ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+p{
+    margin-bottom: 0;
+}
+a,a:hover{
+    color: black;
+    text-decoration: none;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+h5{
+    font-size: 2rem;
+}
+
+/*header*/
+header{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    font-weight: bolder;
+}
+footer{
+    height: 10vh;
+    width: 100%;
+}
+.top_head{
+    display: flex;
+    border: 1px solid black;
+}
+.top_head .logo{
+    width: 10%;
+}
+.header_nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between
+}
+.header_nav .lists{
+    display: flex;
+    
+}
+.lists li{
+    margin: 0 2rem;
+}
+.lists span{
+    display: block;
+}
+.contact{
+    display: flex;
+    width: 10%;
+    line-height: 5;
+}
+.contact a{
+    display: flex;
+    width: 100%;
+}
+
+.contact div{
+    background: #000;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.s{
+    padding: 1rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+.u{
+    height: 4px;
+    width: 0;
+    background: #000;
+}
+.lists .s:hover ~ .u{
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+/* header checked */
+.on{ 
+    width: 100%;
+}
+
