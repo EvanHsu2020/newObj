@@ -1,107 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html,body{
-    width: 100%;
-    background: #E9E9E9;
-}
-ol,ul{
-    list-style: none;
-    margin-bottom: 0;
-}
-p{
-    margin-bottom: 0;
-}
-a,a:hover{
-    color: black;
-    text-decoration: none;
-}
-h1{
-    font-size: 4rem;
-}
-h2{
-    font-size: 3.5rem;
-}
-h3{
-    font-size: 3rem;
-}
-h4{
-    font-size: 2.5rem;
-}
-h5{
-    font-size: 2rem;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
 /*header*/
 header{
     position: fixed;
-    top: 30px;
-    right: 30px;
-    bottom: 30px;
-    left: 30px;
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
     font-weight: bolder;
+    font-size: 1rem;
+    z-index: 999;
 }
-footer{
-    height: 10vh;
-    width: 100%;
+.header_top{
+    height: 0;
+    
+}
+.header_left{
+    width: 0;
+    height: auto;
+}
+
+/* top */
+.top_head,.header_nav,.header_nav .lists{
+    display: flex;
 }
 .top_head{
-    display: flex;
     border: 1px solid black;
 }
 .top_head .logo{
-    width: 10%;
+    
 }
 .header_nav{
-    display: flex;
     width: 100%;
-    justify-content: space-between
+    justify-content: space-between;
 }
-.header_nav .lists{
-    display: flex;
-    
+.lists{
+    margin-left: 4%;
 }
 .lists li{
     margin: 0 2rem;
 }
-.lists span{
+.lists  li span{
     display: block;
 }
-.contact{
-    display: flex;
-    width: 10%;
-    line-height: 5;
-}
-.contact a{
-    display: flex;
-    width: 100%;
-}
-
-.contact div{
-    background: #000;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-}
-.s{
+.obj{
     padding: 1rem 0;
     font-family: 'Roboto', sans-serif;
 }
-.u{
+.under_line{
     height: 4px;
     width: 0;
     background: #000;
 }
-.lists .s:hover ~ .u{
+/* .lists .obj:hover ~ .under_line{
     width: 100%;
-    transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
+} */
+/* left */
+.left_head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82px ;
+    height: 100%;
+    border: 1px solid black;
 }
-
+.left_head .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+.left_head .icons i{
+    margin: 1rem 0;
+}
 /* header checked */
-.on{ 
+.under_line.on{ 
     width: 100%;
+}
+/* contact */
+.contact{
+    position: relative;
+    display: flex;
+    width: auto;
+    cursor: pointer;
+}
+.txt,.ar{
+    margin: auto 1rem;
+}
+.ar{
+    display: flex;
+    background: #000;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.fas.fa-arrow-right{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all .6s;
+}
+.farrow1{
+    opacity: 0;
+}
+.farrow2{
+    opacity: 1;
+    padding-right: 30px;
+}
+.fas.fa-arrow-right::before{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact:hover .fas.fa-arrow-right{
+    padding-left: 12px;
+}
+.contact:hover .farrow1{
+    opacity: 1;
+}
+.contact:hover .farrow2{
+    opacity: 0;
+}
+/* main */
+.main{
+    width: auto;
+    margin-top: 10rem;
+}
+.zone1{
+    display: flex;
+    width: 90%;
+    margin-left: 10%;
+}
+.zone1 .content1{
+    width: 50%;
+    padding: 10rem 6rem 0 2rem;
+}
+.zone1 .content1 h1{
+    font-family: 'Signika', sans-serif;
+    font-size: 6vw;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    line-height: 1;
+}
+.zone1 .content1 .intro{
+    padding: 2rem 0 10rem;
+    font-size: 1.2rem;
+}
+.zone1 .main_img{
+    width: 50%;
+    height: auto;
+}
+.zone1 .main_img img{
+    width: 100%;
+    height: 80%;
+}
+.our_services ul{
+    list-style: initial;
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service .ser{
+    width: 50%;
+    padding: 2rem;
+    padding-left: 0;
+}
+.service .ser ul{
+    padding-left: 1.5rem;
+    color: #1d0a0a;
+}
+.service .ser li::marker{
+    font-size: 10%;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 1rem;
+    text-align: center;
 }
 
